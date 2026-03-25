@@ -30,4 +30,21 @@ For correct execution:
 3. All datasets and output `.keras` models are explicitly git-ignored.
 
 ## Reproducibility
-The internal paths inside the notebook have been refactored to use standard relative paths (e.g., `./datasets_200/validation`), allowing the notebook to securely execute on any machine running from the project root directory. Local destruction commands (`!rm -rf`) have been disabled to ensure machine safety.
+The internal paths inside the notebook have been refactored to use standard relative paths (e.g., `../data/datasets_200/validation`), allowing the notebook to securely execute on any machine running from the `notebooks/` directory. Local destruction commands (`!rm -rf`) have been disabled to ensure machine safety.
+
+## Results & Evaluation
+The model was evaluated using a validation subset. For the base configuration (`datasets_200`), the following results were achieved:
+- **Accuracy**: 84%
+- **Classification Performance**:
+  - **Cats**: Precision 0.77 / Recall 0.96
+  - **Dogs**: Precision 0.95 / Recall 0.72
+
+Visual evaluation of training history (loss and accuracy plots) can be found in the `outputs/` directory.
+
+## Usage
+1. Open the main notebook: `notebooks/ImageClassification.ipynb` using Jupyter Notebook, JupyterLab, or VS Code.
+2. Select a Python 3 kernel (refer to `requirements.txt` for dependencies).
+3. Run all cells sequentially to perform data extraction, model building, training, and final evaluation.
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
