@@ -1,0 +1,7 @@
+# Data files and directories
+datasets_*/
+*.zip
+*.keras
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
