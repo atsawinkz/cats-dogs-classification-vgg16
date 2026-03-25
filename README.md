@@ -14,7 +14,7 @@ This repository contains a professional Machine Learning project utilizing the V
 1. Clone the repository:
    ```bash
    git clone <your-repository-url>
-   cd LAB_09
+   cd cats-dogs-classification-vgg16
    ```
 
 2. Install the required Python packages:
