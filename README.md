@@ -31,6 +31,3 @@ For correct execution:
 
 ## Reproducibility
 The internal paths inside the notebook have been refactored to use standard relative paths (e.g., `./datasets_200/validation`), allowing the notebook to securely execute on any machine running from the project root directory. Local destruction commands (`!rm -rf`) have been disabled to ensure machine safety.
-
-## Author & Contact
-Maintained by: atsawinkz (atsawinkz@gmail.com)
