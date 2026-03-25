@@ -3,14 +3,12 @@
 This repository contains a professional Machine Learning project utilizing the VGG16 architecture through standard transfer learning techniques to build an image classification model capable of distinguishing between images of cats and dogs.
 
 ## Project Structure
-- `ImageClassification.ipynb`: The main Jupyter Notebook containing the training pipeline, image augmentation, model construction, and evaluation workflows.
+- `data/`: Contains all datasets (raw .zip files and extracted directories).
+- `notebooks/`: Contains the main Jupyter Notebook (`ImageClassification.ipynb`) with the training pipeline.
+- `models/`: Stores the serialized model checkpoint files (`*.keras`).
+- `outputs/`: Holds training artifacts, such as generated plots and evaluation images.
 - `requirements.txt`: Project dependencies necessary to run the notebook.
-- `.gitignore`: Excludes datasets, model checkpoint files, and heavy assets to keep the GitHub repository tidy.
-
-## Key Features
-- **Transfer Learning**: Utilizing `tensorflow.keras.applications.VGG16` for feature extraction.
-- **Data Augmentation**: Incorporating `ImageDataGenerator` for robust model generalization (zooming, flipping, rotation).
-- **Model Evaluation**: Comprehensive evaluation including Confusion Matrices and Classification Reports via `scikit-learn`.
+- `.gitignore`: Excludes datasets, models, and heavy assets to keep the GitHub repository tidy.
 
 ## Environment Setup
 1. Clone the repository:
