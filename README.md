@@ -23,11 +23,11 @@ This repository contains a professional Machine Learning project utilizing the V
    ```
 
 ## Dataset Configuration
-The original codebase uses several zip datasets (`datasets_200.zip`, `datasets_1000.zip`, `datasets_2000.zip`, and `datasets_8000.zip`).
+The project uses several zip datasets (`datasets_200.zip`, `datasets_1000.zip`, `datasets_2000.zip`, and `datasets_8000.zip`).
 For correct execution:
-1. Ensure the relevant `.zip` file is placed in your project root.
-2. The notebook handles unzipping into relative directories (e.g., `./datasets_...`).
-3. These datasets and output `.keras` models are explicitly git-ignored.
+1. Place the relevant `.zip` file(s) in the `data/` directory.
+2. The notebook (located in `notebooks/`) handles unzipping into `data/` automatically.
+3. All datasets and output `.keras` models are explicitly git-ignored.
 
 ## Reproducibility
 The internal paths inside the notebook have been refactored to use standard relative paths (e.g., `./datasets_200/validation`), allowing the notebook to securely execute on any machine running from the project root directory. Local destruction commands (`!rm -rf`) have been disabled to ensure machine safety.
